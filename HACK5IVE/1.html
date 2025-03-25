@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brown Living Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .top-bar {
+            background-color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #5a6a56;
+            padding: 10px 20px;
+            color: white;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-links li {
+            margin: 0 10px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .icons span {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+        .slider {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0;
+        }
+        .slide.active {
+            opacity: 1;
+        }
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        .text {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            color: white;
+        }
+        .text h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .text button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        .top-picks, .new-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: white;
+        }
+        .product-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 200px;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .product p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <p>Curated for Earth Lovers</p>
+        </div>
+        <nav class="navbar">
+            <div class="logo">Brown Living</div>
+            <ul class="nav-links">
+                <li><a href="#">Shop All</a></li>
+                <li><a href="#">Care</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Home & Living</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Gift 🎁</a></li>
+                <li><a href="3.html">Contact us</a></li>
+                <li><a href="4.html">About Us</a></li>
+            </ul>
+            <div class="icons">
+                <span>🔍</span>
+                <span>👤</span>
+                <span>🛒</span>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="slider">
+            <div class="slide active">
+                <img src="https://brownliving.in/cdn/shop/files/Gifts_that_give_back.jpg?v=1739378172&width=2000" alt="Gifts that Give Back">
+                <div class="overlay"></div>
+                <div class="text">
+                    <h1>Gifts that Give Back</h1>
+                    <button>DISCOVER SUSTAINABLE GIFTS →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="top-picks">
+        <h2>Our Top Picks</h2>
+        <div class="product-container">
+            <div class="product"><img src="https://brownliving.in/cdn/shop/products/handmade-bamboo-bird-feeder-with-hanging-rope-tbb-1-bird-feeder-brown-living-780483.jpg?v=1682963031&width=1080" alt="Bird Feeder"><h3>Handmade Bamboo Bird Feeder</h3><p>₹499</p></div>
+            <div class="product"><img src="https://brownliving.in/cdn/shop/products/sustainable-gift-card-bl-18-gift-cards-brown-living-492186.jpg?v=1717419326&width=1080" alt="Gift Card"><h3>Sustainable Gift Card</h3><p>From ₹500</p></div>
+            <div class="product"><img src="https://brownliving.in/cdn/shop/products/pack-of-4-bare-spa-bars-bnpci024-body-soap-brown-living-527142.jpg?v=1682965915&width=1080" alt="Spa Bars"><h3>Pack of 4 Bare Spa Bars</h3><p>₹750 <s>₹800</s></p></div>
+            <div class="product"><img src="https://brownliving.in/cdn/shop/products/natural-coconut-coir-dishwashing-round-scrub-pad-271-2907-598-gsrc001-kitchen-tools-brown-living-597968.jpg?v=1734638572&width=900" alt="Scrub Pad"><h3>Natural Coconut Coir Scrub Pad</h3><p>₹235 <s>₹250</s></p></div>
+            <div class="product"><img src="https://brownliving.in/cdn/shop/products/multicolour-patchwork-tote-umw-patch-tote-01-womens-accessories-brown-living-381405.jpg?v=1682964878&width=360" alt="Deodoriser"><h3>Natural PET Spray-Deodoriser</h3><p>₹290</p></div>
+        </div>
+    </section>
+    
+    <section class="new-section">
+        <h2>New Arrivals</h2>
+        <div class="product-container">
+            <div class="product"><img src="https://brownliving.in/cdn/shop/files/sustainable-coconut-shell-candlediya-eco-friendly-scented-soy-wax-by-thenga-at-brownliving-115510.jpg?v=1732621391&width=1080" alt="New Arrival 1"></div>
+            <div class="product"><img src="https://brownliving.in/cdn/shop/products/lavender-bath-salt-lavenderbathsalt-bath-salt-brown-living-828953.jpg?v=1682963886&width=1080" alt="New Arrival 2"></div>
+            <div class="product"><img src="https://brownliving.in/cdn/shop/files/herbal-joints-capsules-60-capsules-sangsara-sustainable-medical-care-brown-living-sangsarajoint-727838.jpg?v=1724513460&width=1080" alt="New Arrival 3"></div>
+        </div>
+    </section>
+</body>
+</html>
